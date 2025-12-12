@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    }
+    li{
+    list-style: none;
+    }
+    :root{
+    font-size: 100%;
+    }
+    
+    h1 , h2 , h3 , h4 , h5 , h6 , strong , em , mark , b , u , i , a{
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
+    color:inherit;
+    line-height: inherit;
+    text-wrap: pretty;
+    }
+    mark{
+    background-color: transparent;
+    } 
+
+
+body{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+
+/* header */
+.header{
+    width: 100%;
+    /* min-height: 100px; */
+    /* background-color: red; */
+
+    padding: 2rem 4rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    /* width: 250px;
+    min-height: 50px; */
+    /* background-color: blue; */
+
+    font-weight: 700;
+}
+
+.header .menu{
+    /* width: 500px;
+    min-height: 50px; */
+    /* background-color: aqua; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header .ham{
+    display: none;
+}
+
+/* header media */
+@media (max-width: 932px){
+    .header .menu{
+        display: none;
+    }
+
+    .header .ham{
+        display: block;
+    }
+}
+
+
+
+/* article */
+.inside-block{
+    /* width: 100%;
+    min-height: 600px; */
+    background-color: rgb(201, 208, 215);
+
+    padding: 2rem;
+    margin: 0 0 4rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-block .inside{
+    width: 60%;
+    max-width: 500px;
+    min-height: 300px;
+    background-color: lightgray;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+/* article media */
+@media (max-width: 932px) {
+    .inside-block .inside{
+        font-size: 2rem;
+        text-decoration: none;
+    }    
+}
+
+@media (max-width: 430px) {
+    .inside-block .inside{
+        font-size: 1.5rem;
+        text-decoration: none;
+    }    
+}
+
+
+
+/* section */
+.section{
+    max-width: 800px;
+    /* background-color: lightgray; */
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 0;
+}
+
+.section .column{
+    text-align: center;
+}
+
+.section .column .image{
+    width: 15rem;
+    min-height: 15rem;
+    background-color: lightgray;
+
+    margin: 0 0 2rem;
+}
+
+/* section media */
+@media (max-width: 932px) {
+    .section{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .section{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+
+
+.footer{
+    /* width: 500px;
+    min-height: 500px;
+    background-color: aqua; */
+
+    margin: 5rem 0 0;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer .rrss{
+    /* width: 400px;
+    min-height: 200px;
+    background-color: blueviolet;  */
+
+    /* margin: 0 0 1rem; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer .policy{
+    /* width: 70%; */
+    /* min-height: 200px;
+    background-color: red; */
+
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    font-weight: 200;
+}
+
+.footer .policy .li{
+    text-decoration: underline;
+
+}
+.footer .policy .not{
+    /* width: 100px;
+    min-height: 100px; */
+    /* background-color: aqua; */
+
+    /* font-weight: 1000; */
+    text-decoration: none;
+}
+
+.footer .button{
+    /* width: 100%;
+    min-height: 50px;
+    background-color: blue; */
+
+    padding: 20px;
+    margin: 0 0 25px;
+    border: 1px green solid;
+
+    color: green;
+    text-transform: capitalize;
+}
+
